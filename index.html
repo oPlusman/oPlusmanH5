@@ -1,48 +1,107 @@
-<!doctype html>
-<html>
-  <head><!-- 写给浏览器看-->
-    <meta charset="UTF-8"><!-- 字符编码 万国码 -->
+<heml>
+<head>
+  <meta charset="UTF-8"><!-- 字符编码 万国码 -->
     <mata name="Keywords" content="">
     <mata name="Description" content="">
-    <title>css3多边形旋转放大</title><!--标题标签-->
-    <style>/* css样式表 */
-      body{
-        margin: 0;/* 外边距 不给单位*/
-      }
-      ul{
-         list-style: none;/* 清除小黑圆点 */
-         margin: 0;/**/
-         padding: 0;/* 内边距*/
-      }
-      .wap .im{/* .class选择器 */
-        width: 960px;/* 宽度：*/
-        height: 500px;/*高度*/
-        margin: 50px auto;/*上下 左右*/
-        background-color: #096;/*背景颜色：原谅色*/
-      }
-      .wrap .important{
-        margin-lelf: 100px;
-      }
-      .lelf{
-        position: absolute;/* 绝对定位 飘浮2楼 */
-        lelf: 0;
-        top: 0;
-        width: 180px;
-        height: 105px;
-        background-color: rgba(0,0,0,.5);
-        tarnsform: rotate(-60deg);/* css3变换属性 旋转（角度）*/
-        }
-      .right{
-        position: absolute;/* 绝对定位 飘浮3楼 */
-        lelf: 0;
-        top: 0;
-        width: 180px;
-        height: 105px;
-        background-color: rgba(0,0,0,.5);
-        }
-     </style>
-   </head>
-      
-<body><!--写给用人看 -->
-  <div class="wrap"><!--盒子标签-->                                 
+  <title>炫酷边框特效<title>
+  
+  <style>
+  *{
+  margin: 0;/*外边距*/
+  padding: 0;/*内边距*/
+  }
+  div{
+  height: 100vh;/*高度  px 像素/单位 vh 相对视窗/*/
+  background-color:#0e0024;/* 背景颜色*/
+  display: flex; /* 弹性盒模型  */
+  /* justify-content: space-between;*/
+  justify-content: center;/* */
+  align-items: center;/**/
+  width:100%;
+  
+  }
+  a{
+    overflow:
+    position: relative;/*  相对定位*/
+    text-decoration: none;/* */
+    font-size: 20px;
+    color: #fff;
+  }
+  span{
+      position:absolute;/* 绝对定位 参照物 已经定位的爸爸*/
+  }
+  span:nth-child(1){
+  top:0;
+  left:0;
+  width: 4px%;
+  height:100%;
+  background: linear-gradienr(to top,red,rgba(0,0,0,0));
+  transform: translateY(100%);
+  animation:move 1s;
+  animation-d
+  }
+  @keyframes move1{
+  100%{
+        transform: translateX
+  
+  }
+  }
+  span:nth-child(2){
+  top:0;
+  left:0;
+  width: 100%;
+  height:4px%;
+  background:linear-gradient(to right,red,rgbaI(0,0,0,0));
+  transform:translateX(100%);
+  animation:move2 1s linear infinite;
+  animation-delay: .5s;
+  }
+  @keyframes move4{
+  100%{
+  
+  }
+  }
+  span:nth-child(3){
+  top:0;
+  left:0;
+  width: 4px%;
+  height:100%;
+  background-color:#ff9900;
+  }
+  span:nth-child(4){
+  top:0;
+  left:0;
+  width: 100%;
+  height:4px%;
+  background:linear-gradient(to right,red,rgbaI(0,0,0,0));
+  transform:translateX(100%);
+  animation:move4 1s linear infinite;
+  animation-delay: .5s;
+  }
+  @keyframes move4{
+  100%{
+  
+  }
+  }
+  </style>
+  </head>
+<body>
+  <div>
+    <a href="#" target='_blank'>THSHJHDHS
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
     
+    <div>
+  
+  </body>
+  </html>
+ <!-- 
+    a 超链接 用转跳网页
+    <a href="http://www.w3school.com.cn">W3School</a>
+
+
+
+-->
